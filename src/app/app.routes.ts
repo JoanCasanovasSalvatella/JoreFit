@@ -6,11 +6,6 @@ export const routes: Routes = [
   {
     path: '',
     title: 'JoreFit',
-    component: AppComponent // Página principal
-  },
-  {
-    path: '',
-    title: 'JoreFit',
     component: IndexContentComponent // Página principal
   },
 
