@@ -1,15 +1,27 @@
-<h1>INICIA SESION</h1>
-<h2>Bienvenido de vuelta!</h2>
+<div class="a">
+  <div class="linea"></div>
+    <span class="seccion">Bienvenido de vuelta!</span>
+  <div class="linea"></div>
+</div>
 
-<form>
-  <label>Nombre de ususario:</label>
-  <input type="text" name="nick">
-  <br>
-  <label>Contraseña</label>
-  <input type="text" name="contrasena">
-  <br>
-  <br>
-  <button type="submit">Iniciar Sesion</button>
-</form>
+<div class="cuadro">
+  <span class="seccion">Inicia Sesion</span>
+</div>
+<div class="datos">
+  <form>
+    <div class="campos">
+      <label>Nombre de usuario</label>
+      <input type="text" name="nick">
+      <br>
+      <label>Contraseña</label>
+      <input type="text" name="contrasena">
+    </div>
+    <br>
+    <br>
+    <button class="boton" type="submit">Iniciar Sesion</button>
+  </form>
 
-<h5>¿No tienes cuenta? <a routerLink="/register">REGISTRATE</a></h5>
+  <h5>¿No tienes cuenta? <a routerLink="/register">REGISTRATE</a></h5>
+</div>
+
+<app-footer2></app-footer2>
