@@ -1,0 +1,46 @@
+.footer2{
+  background-color: #474747;
+  display: flex;
+  color: white;
+}
+
+img.icon{
+  width: 9vw;
+  height: 9vh;
+  min-height: 9vh;
+  min-width: 9vh;
+  margin: 1vh;
+}
+
+.title{
+  padding-top: 1.2vh;
+  margin-left: 10vw;
+}
+
+.contacto{
+  margin-left: 50%;
+  display: grid;
+}
+
+.correo, .tlfn{
+  float: right;
+  display: flex;
+  margin-right: 20px;
+}
+
+.mail{
+  width: auto;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.phone{
+  width: auto;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 0vw;
+}
+
+h5{
+  margin-left: 10px;
+}

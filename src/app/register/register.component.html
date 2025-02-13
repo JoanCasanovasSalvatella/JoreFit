@@ -16,7 +16,7 @@
       <label>Apellido</label>
       <input type="text" name="apellido">
       <br>
-      <label>Nombre de ususario</label>
+      <label>Nombre de usuario</label>
       <input type="text" name="nick">
       <br>
       <label>Contraseña</label>
@@ -53,7 +53,7 @@
 </div>
 <div class="datos">
   <form>
-    <label>Objetivo</label>
+    <label class="label_Objetivo">Objetivo</label>
     <br>
     <div class="objetivo">
       <select name="nivel">
@@ -65,12 +65,12 @@
     </div>
     <br>
     <div class="pesoActual">
-      <label>Peso Actual:</label>
+      <label class="lblPesoA">Peso Actual</label>
     </div>
     <input class="pesoA" type="number" step="0.01" min="0" name="pesoActual">
     <br>
     <div class="pesoObjetivo">
-      <label>Peso Objetivo:</label>
+      <label class="lblPesoO">Peso Objetivo</label>
     </div>
     <input class="pesoO" type="number" step="0.01" min="0" name="pesoObjetivo">
     <br>
@@ -78,3 +78,5 @@
     <button class="boton" type="submit">Guardar</button>
   </form>
 </div>
+
+<app-footer2></app-footer2>
