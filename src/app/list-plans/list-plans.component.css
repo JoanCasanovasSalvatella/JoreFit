@@ -1,0 +1,64 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.linea{
+  flex-grow: 1;
+  height: 8px;
+  background-color: #00c6c6;
+  max-width: 550px;
+  margin-top: 15px;
+}
+
+.seccion{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -15px;
+}
+
+.a{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.plan{
+  display: flex;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titulo{
+  background-color: #00c6c6;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+h3{
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
+.seeMore{
+  background-color: #EFB22F;
+  width: 18vw;
+  border: none;
+  height: 5vh;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.card{
+  background-color: #474747;
+  height: 66vh;
+  margin: 2vw;
+  width: 30%;
+}
+
+.pies{
+  height: 50vh;
+}
