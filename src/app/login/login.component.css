@@ -2,53 +2,168 @@
   font-family:Arial, Helvetica, sans-serif;
 }
 
-p{
-  color: red;
-  font-size: 15px;
-  text-align: center;
-}
-
-.container{
-  margin-top: 40px;
-  margin-left: 200px;
-  margin-right: 200px;
-  border: 1px solid;
-}
-
-h3{
-  text-align: center;
-}
-
-input{
-  border-radius: 5px;
-  padding-left: 10px;
-  margin-left: 250px;
-  background-color: #F7EDB8;
-  width: 500px;
-  height:30px;
-}
-
-button{
-  border-radius: 10px;
-  text-align: center;
-  background-color: #F7EDB8;
-  width: 300px;
-  height: 40px;
-  margin-left: 360px;
-  margin-bottom: 40px;
-}
-
-h5{
-  margin-top: 50px;
-  margin-bottom: -10px;
-  text-align: center;
+a{
+  text-decoration: none;
+  color:#15CCCC
 }
 
 .linea{
-  margin-left: 160px;
   flex-grow: 1;
-  height: 2px;
-  background-color: black;
-  max-width: 700px;
+  height: 8px;
+  background-color: #00c6c6;
+  max-width: 550px;
   margin-top: 15px;
+}
+
+.seccion{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -15px;
+}
+
+.a{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cuadro{
+  background-color:#15CCCC;
+  text-align: center;
+  height: 80px;
+  width: 700px;
+  padding-top: 40px;
+  margin-left: 22%;
+  border-bottom: 2px solid black;
+}
+
+.datos{
+  background-color:#D9D9D9;
+  text-align: center;
+  height: 350px;
+  width: 700px;
+  padding-top: 40px;
+  margin-left: 22%;
+  margin-bottom: 75px;
+}
+
+label{
+  display: inline-block;
+  width: 210px;
+  text-align: left;
+  font-size: 23px;
+}
+
+.campos{
+  text-align: center;
+  padding-left: 40px;
+}
+
+input{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: none;
+  height: 20px;
+}
+
+.boton{
+  background-color:#15CCCC;
+  color: white;
+  text-align: center;
+  height: 70px;
+  width: 500px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 320px){
+  *{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color:#15CCCC
+  }
+
+  .linea{
+    flex-grow: 1;
+    height: 8px;
+    background-color: #00c6c6;
+    max-width: 165.3vw;
+    width: 165.3vw;
+    margin-top: 15px;
+  }
+
+  .seccion{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: -15px;
+  }
+
+  .a{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 165.3vw;
+  }
+
+  .cuadro{
+    background-color:#15CCCC;
+    text-align: center;
+    height: 80px;
+    width: 155.3vw;
+    padding-top: 40px;
+    margin-left: 5%;
+    border-bottom: 2px solid black;
+  }
+
+  .datos{
+    background-color:#D9D9D9;
+    text-align: center;
+    height: 350px;
+    width: 155.3vw;
+    padding-top: 40px;
+    margin-left: 5%;
+    margin-bottom: 75px;
+  }
+
+  label{
+    display: inline-block;
+    width: 210px;
+    text-align: left;
+    font-size: 23px;
+  }
+
+  .campos{
+    text-align: center;
+    padding-left: 40px;
+  }
+
+  input{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: none;
+    height: 20px;
+  }
+
+  .boton{
+    background-color:#15CCCC;
+    color: white;
+    text-align: center;
+    height: 70px;
+    width: 145.3vw;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  h5{
+    font-size: 23px;
+  }
 }
