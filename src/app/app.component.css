@@ -1,174 +1,123 @@
-  .encabezado {
-    border-bottom: 1px solid black;
+/*Propiedades del encabezado*/
+div.header{
+  background-color: #474747;
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  font-family: Helvetica;
+  min-height: 11vh;
+}
+
+/*Propiedades de los iconos de la app*/
+img.icon{
+  width: 9vw;
+  height: 9vh;
+  min-height: 9vh;
+  min-width: 9vh;
+  margin: 1vh;
+}
+
+/*Propiedades del titulo de la app*/
+h1.title{
+  width: 11vw;
+  height: 11vh;
+  text-align: center;
+  margin-top: 3vh;
+  color: white;
+  /*font-family: Impact*/
+  font-family: Helvetica;
+  margin-left: 25vw;
+  min-height: 9vh;
+}
+
+div.gestion{
+  margin-left: 18vw;
+  display: flex;
+}
+
+button.gestiones{
+  margin-top: 2vh;
+  margin-right: 1vw; /*Disseño responsive*/
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  width: 14vw;
+  height: 5vh;
+  text-align: left;
+  background-color: #15CCCC;
+  color: black;
+  border: none;
+  border-radius: 2vh;
+  font-size: 18px;
+  min-width: 10vw;
+  min-height: 6.5vh;
+}
+
+button.gestiones:hover{
+  color: white;
+}
+
+.login, .signin{
+  width: 3vw;
+  height: 3vh;
+  float: right;
+  display: flex;
+}
+
+.login:hover, .signin:hover{
+  width: 3vw;
+  height: 3vh;
+  float: right;
+  display: flex;
+}
+
+@media (max-width: 320px){
+  .header{
+    max-width: 165.3vw;
+    width: 165.3vw;
+  }
+
+  div.gestion{
+    margin-left: 0;
+    display: grid;
+    gap: 0;
+    background-color:#474747;
+    padding-left: 65.5vw;
+  }
+
+  button.gestiones{
+    margin-top: 1vh;
+    margin-right: 1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    width: 35vw;
+    height: 4vh;
     text-align: center;
-    height: 80px;
-    align-items: center;
-    display: flex;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    padding: 10px;
+    background-color: #15CCCC;
     color: black;
-}
-
-.icon{
-    width: 60px;
-    float: left;
-    margin-right: 50px;
-    max-width: 60%;
-}
-
-.menuIcon{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    padding: 25px;
-    background-image: url('../assets/avatarPFP.png');
-    background-size: 80px 80px;
-    background-position:center;
-    float: left;
     border: none;
-    background-color: transparent;
-}
+    border-radius: 2vh;
+    font-size: 14px;
+    min-width: 12vw;
+    min-height: 3vh;
+  }
 
-.pfp{
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    padding: 0;
-}
+  .login, .signin{
+    width: 4vw;
+    height: 2vh;
+    margin-right: 0vw;
+  }
 
-.busqueda {
-    flex: 1; /* Permite que el input ocupe espacio disponible */
-    max-width: 300px; /* Ancho máximo del input */
-    height: 30px;
-    padding: 5px;
-    font-size: 16px;
-    margin-left: 200px; /* Espaciado después del botón chart */
-    background-color: lightgrey;
-    border-radius: 20px;
-}
-
-.darkMode{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    padding: 25px;
-    background-image: url('../assets/dark.png');
-    background-size: 60px 60px;
-    background-position:center;
-    background-color: white;
-    float: left;
-    margin-left: 10px;
-    margin-right: 0px;
-}
-
-.chart{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-image: url('../assets/chart.png');
-    background-size: 60px 60px;
-    background-position:center;
-    float: left;
-    margin-left: 10px;
-    margin-right: 0px;
-    border: none;
-    background-color: white;
-}
-h2{
-    margin-right: 50px;
-    align-items: center;
-    margin-left: 200px;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
+  h1.title{
+    width: 100%;
+    height: 11vh;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    text-align: center;
+    margin-top: 3vh;
+    color: white;
+    font-family: Helvetica;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 9vh;
+  }
 }
 
-div.dark{
-    background-color: #303030;
-}
 
-.dark_mode{
-    background-color: #4B4B4B;
-}
-
-@media (max-width: 400px) {
-  body{
-    width: 70%;
-    margin: 0px;
-  }
-
-  .encabezado{
-    margin: 0;
-    border-bottom: 2px solid black;
-    width: 155vh;
-    gap: 2px;
-  }
-
-  .icon, .menuIcon, .darkMode, .chart{
-    margin-right: -30vh;
-  }
-
-  .menuIcon{
-    border-radius: 100%;
-    padding: 20px;
-    background-image: url('../assets/avatarPFP.png');
-    background-size:cover;
-    background-position:center;
-    border: none;
-    background-color: transparent;
-  }
-
-  .darkMode{
-    border-radius: 100%;
-    /*padding: 20px;*/
-    background-image: url('../assets/dark.png');
-    background-size:cover;
-    background-position:center;
-    border: none;
-    background-color: transparent;
-  }
-
-  .chart{
-    border-radius: 100%;
-    background-image: url('../assets/chart.png');
-    background-size: cover;
-    background-position:center;
-    border: none;
-    background-color: white;
-    margin-right: 60vh;
-    margin-left: -30vh;
-  }
-
-  .chart,.menuIcon, .icon, .dark_mode{
-    width: 36px;
-    height: 36px;
-  }
-
-  h2{
-    font-size: 25px;
-    margin-left: -30px;
-  }
-
-  .busqueda {
-    max-width: 150px; /* Ancho máximo del input */
-    height: 30px;
-    font-size: 16px;
-    background-color: lightgrey;
-    border-radius: 20px;
-    margin-right: 170px;
-    margin-left: -550px;
-}
-}
