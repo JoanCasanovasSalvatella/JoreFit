@@ -159,3 +159,75 @@ select{
 .label_Objetivo{
   text-align: center;
 }
+
+/*Version de mobil*/
+@media (max-width: 320px){
+  .a{
+    max-width: 165.3vw;
+    width: 165.3vw;
+  }
+
+  .seccion{
+    font-size: 26px;
+    width: 300px;
+  }
+
+  .cuadro{
+    max-width: 160.3vw;
+    width: 165.3vw;
+    text-align: center;
+    margin-left: 3vw;
+  }
+
+  .datos{
+    margin-left: 3vw;
+    max-width: 160.3vw;
+    width: 165.3vw;
+  }
+
+  /*Estilo del campo de fecha de nacimiento*/
+  input[type="date"]{
+    margin-left: -190px;
+    font-size: 18px;
+  }
+
+  .fecha{
+    margin-left: -180px;
+  }
+
+  .nivel{
+    margin-left: 65vw;
+  }
+
+  /*Boton submit*/
+  button[type="submit"]{
+    font-size: 25px;
+  }
+
+  h5, a{
+    font-size: 18px;
+  }
+
+  select{
+    text-align: center;
+    font-size: 18px;
+  }
+
+  option{
+    font-size: 14px;
+  }
+
+  .pesoActual{
+    margin-left: 6px;
+  }
+
+  .pesoObjetivo{
+    margin-left: 96vw;
+    margin-top: -15.5vh;
+  }
+
+  input[type="number"]{
+    padding-bottom: 3vh;
+  }
+
+}
