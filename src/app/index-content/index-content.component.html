@@ -22,29 +22,21 @@
     </div>
 
     <!-- Targetas de varios planes -->
-    <div class="plan">
-        <!--Trageta 1-->
+    <div class="planes-container">
+      @for (plan of planes; let index = $index; track index) {
         <div class="card">
           <div class="titulo">
-            <h3>Ganancia muscular</h3>
+            <h3>{{ plan.nombre }}</h3>
           </div>
-          <img src="assets/ganaciaMuscular.jfif" alt="Avatar" style="width:100%">
+          <img [src]="plan.imagen" alt="Imagen del plan">
           <div class="container">
-            <button class="seeMore">Saber mas</button>
+            <button class="seeMore" [routerLink]="plan.nombre">Saber más</button>
           </div>
         </div>
-
-        <!--Trageta 2-->
-        <div class="card">
-          <div class="titulo">
-            <h3>Ejercicio cardiobascular</h3>
-          </div>
-          <img src="assets/ejercicioCardiobascular.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <button class="seeMore">Saber mas</button>
-          </div>
-        </div>
+      }
     </div>
-    <button class="seePlans" routerLink="/listPlans">Ver mas planes</button>
+    <div class="verMas">
+      <button class="seePlans" routerLink="/listPlans">Ver mas planes</button>
+    </div>
     <br>
 <app-footer></app-footer>

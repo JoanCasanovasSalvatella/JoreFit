@@ -1,3 +1,16 @@
+.planes-container{
+  width: 100%;
+  justify-items: center;
+}
+
+.card{
+  background-color: #474747;
+  height: 66vh;
+  width: 35%;
+  margin: 2vw;
+  text-align: center;
+}
+
 img{
   width: 100%;
   height: 50vh;
@@ -75,7 +88,7 @@ h3.lowText{
 
 .plan{
   display: flex;
-  width: 60%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
 }
@@ -101,12 +114,6 @@ h3{
   margin: 5px;
 }
 
-.card{
-  background-color: #474747;
-  height: 66vh;
-  margin: 2vw;
-}
-
 .seePlans{
   background-color: #EFB22F;
   width: 35vw;
@@ -114,50 +121,98 @@ h3{
   height: 5vh;
   font-size: 20px;
   border-radius: 5px;
-  margin-left: 30%;
+  justify-items: center;
 }
 
-@media (max-width: 480px) {
-  .subtitle2{
-    margin-left: -16.5vw;
+.verMas{
+  justify-items: center;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .planes{
+    width: 167vw;
   }
 
-  .texto{
-    margin-top: 5vh;
+  .planes-container{
+    justify-items: center;
   }
 
-  .plan{
-    margin-left: 0vw;
+  .card {
+    width: 93%;
+    margin: 5vw;
+    height: 100vh;
+    font-size: 30px;
   }
 
-  .card{
-    min-width: 46vw;
-    min-height: 20vh;
+  h3{
+    font-size: 27px;
+  }
+
+  img {
+    height: 76vh;
   }
 
   .container{
-    background-color: #474747;
-    height: 7vh;
+    width: 100%;
   }
 
-  .seeMore{
-    background-color: #EFB22F;
-    width: 35vw;
-    border: none;
-    height: 5vh;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 5px;
+  .seeMore {
+    width: 100vw;
+    height: 8vh;
+    font-size: 26px;
   }
 
-  .seePlans{
-    background-color: #EFB22F;
-    width: 55vw;
-    border: none;
-    height: 5vh;
-    font-size: 20px;
-    border-radius: 5px;
-    margin-top: 6vh;
-    margin-left: 20vw;
+  .seePlans {
+    width: 100vw;
+    height: 8vh;
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .subtitle {
+    height: auto;
+    width: 166.8vw;
+    justify-items: center;
+  }
+
+  .texto {
+    width: 90%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  .subtitle2 {
+    width: 50vw;
+    padding: 5vh;
+    font-size: 14px;
+    margin-right: 45vw;
+  }
+
+  h2.text {
+    font-size: 24px;
+    width: 90vw;
+    padding: 3vh;
+  }
+
+  .linea {
+    max-width: 300px;
+  }
+
+  .seccion {
+    font-size: 28px;
+  }
+
+  .rutina {
+    width: 80vw;
+  }
+
+  .plan {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .encabezado2{
+    width: 99%;
   }
 }
