@@ -33,7 +33,7 @@ export const routes: Routes = [
     component: ProfilComponent // Perfil del usuario
   },
   {
-    path: 'listPlansEjer',
+    path: 'listPlans/:planId',
     title: 'JoreFit - LISTA DE EJERCICIOS DEL PLAN',
     component: ListPlansEjerComponent // Página principal
   }
