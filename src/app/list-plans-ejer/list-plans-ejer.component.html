@@ -1,1 +1,32 @@
-<p>list-plans-ejer works!</p>
+@if(selectedPlan) {
+
+  <div class="a">
+    <div class="linea"></div>
+      <span class="seccion">Plna de {{ selectedPlan.nombre }}</span>
+    <div class="linea"></div>
+  </div>
+
+  <p><strong>NIVEL: </strong>{{ selectedNivel }}</p>
+
+  @if(selectedEjercicios.length > 1) {
+    @for (selectedEjercicio of selectedEjercicios; track $index) {
+      <p><strong>NOMBRE: </strong>{{selectedEjercicio.nombres}}</p>
+      <p><strong>DESCIPCION: </strong>{{selectedEjercicio.descripcion}}</p>
+      <p><strong>SERIES: </strong>{{selectedEjercicio.series}}</p>
+      <p><strong>REPETICIONES: </strong>{{selectedEjercicio.repeticiones}}</p>
+      <p><strong>MUSCULO A TRABAJAR: </strong>{{selectedEjercicio.musculo}}</p>
+    }
+  } @else {
+    <div class="a">
+      <div class="linea"></div>
+        <span class="seccion">¡EROR! AL BUSCAR LOS EJERCICIOS</span>
+      <div class="linea"></div>
+    </div>
+  }
+} @else {
+  <div class="a">
+    <div class="linea"></div>
+      <span class="seccion">¡EROR! AL BUSCAR EL PLAN</span>
+    <div class="linea"></div>
+  </div>
+}
