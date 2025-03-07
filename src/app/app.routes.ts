@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfilComponent } from './profil/profil.component';
 import { ListPlansComponent } from './list-plans/list-plans.component';
+import { ListPlansEjerComponent } from './list-plans-ejer/list-plans-ejer.component';
 
 export const routes: Routes = [
   {
@@ -31,4 +32,9 @@ export const routes: Routes = [
     title: 'JoreFit - PERFIL',
     component: ProfilComponent // Perfil del usuario
   },
+  {
+    path: 'listPlansEjer',
+    title: 'JoreFit - LISTA DE EJERCICIOS DEL PLAN',
+    component: ListPlansEjerComponent // Página principal
+  }
 ];

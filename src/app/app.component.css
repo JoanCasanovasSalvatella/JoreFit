@@ -104,7 +104,8 @@ button.gestiones:hover{
   .login, .signin{
     width: 4vw;
     height: 2vh;
-    margin-right: 0vw;
+    float: right;
+    margin-right: 2vw;
   }
 
   h1.title{
