@@ -10,9 +10,9 @@
       <div class="titulo">
         <h3>{{ plan.nombre }}</h3>
       </div>
-      <img [src]="plan.imagen" alt="Imagen del plan" style="width:100%">
+      <img [src]="plan.imagen" alt="Imagen del plan">
       <div class="container">
-        <button class="seeMore">Saber más</button>
+        <button class="seeMore" [routerLink]="plan.nombre">Saber más</button>
       </div>
     </div>
   }
