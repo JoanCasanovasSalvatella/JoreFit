@@ -17,7 +17,7 @@ export class PlanesService {
     {
       id: 1,
       imagen: "assets/ganaciaMuscular.jfif",
-      nombre: "Ganancia muscular",
+      nombre: "Ganancia Muscular",
       descripcion: "Plan enfocado en el aumento de masa muscular con ejercicios de fuerza progresiva.",
       duracion: 12,
       precio: 50
@@ -25,7 +25,7 @@ export class PlanesService {
     {
       id: 2,
       imagen: "assets/ejercicioCardiobascular.jpg",
-      nombre: "Ejercicio cardiovascular",
+      nombre: "Ejercicio Cardiovascular",
       descripcion: "Programa diseñado para mejorar la resistencia cardiovascular con entrenamientos HIIT y LISS.",
       duracion: 8,
       precio: 40
@@ -33,7 +33,7 @@ export class PlanesService {
     {
       id: 3,
       imagen: "assets/perdidaDePeso.webp",
-      nombre: "Pérdida de peso",
+      nombre: "Pérdida De Peso",
       descripcion: "Entrenamiento para la reducción de grasa corporal con una combinación de fuerza y cardio.",
       duracion: 10,
       precio: 45
@@ -51,6 +51,10 @@ export class PlanesService {
   //Funcion que obtiene los ejercicios asignador de un plan
   getPlanes(): Observable <planes>{
     return this.http.get<planes>(`$(this.apiUrl)/planes`);
+  }
+
+  getPlan(name: string): planes | undefined{
+    return this.planes.find((plan) => plan.nombre === name);
   }
 
   //Funcion que obtiene los ejercicios asignador de un plan
