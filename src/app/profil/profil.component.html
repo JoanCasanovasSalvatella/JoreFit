@@ -8,35 +8,35 @@
   <div class="datos">
     <div class="name">
     <!--Nombre real del usuario-->
-    <h3>Nombre: </h3><h4>Amaia Pujol</h4>
+    <h3>Nombre: </h3><h4>{{usuarios.users.nombre}}</h4>
     </div>
     <div class="name">
     <!--Nombre de usuario-->
-    <h3>Nombre de usuario:</h3><h4>Amaia</h4>
+    <h3>Nombre de usuario:</h3><h4>{{usuarios.users.usuario}}</h4>
     </div>
     <div class="name">
       <!--Contraseña del usuario-->
-      <h3>Contraseña:</h3><h4>..........</h4>
+      <h3>Contraseña:</h3><h4>{{usuarios.users.contrasena}}</h4>
     </div>
   </div>
   <div class="botones">
     <!--Boton para editar los datos del usuario-->
-    <button class="boton">Editar</button>
+    <button aria-label="Editar perfil" class="boton">Editar</button>
     <!--Boton para cerrar sesion-->
-    <button class="boton">Cerrar sesion</button>
+    <button aria-label="Cerrar sesión" class="boton" routerLink="/login">Cerrar sesión</button>
   </div>
 </div>
 
 <!--Seccion de los planes contratados-->
 <div class="encabezado2">
   <div class="linea"></div>
-    <span class="seccion">Mis planes</span>
+    <span class="seccion" aria-label="Mis planes">Mis planes</span>
   <div class="linea"></div>
 </div>
 
 <!--Listado de planes-->
 <div class="addPlan">
-  <button class="botonPlan">Agregar plan</button>
+  <button class="botonPlan" aria-label="Agregar plan">Agregar plan</button>
 </div>
 
 <!-- Tarjetas de varios planes -->
@@ -44,7 +44,7 @@
   <!--Trageta 1-->
   <div class="card">
     <div class="titulo">
-      <h3>Ganancia muscular</h3>
+      <h3 aria-label="Ganancia muscular">Ganancia muscular</h3>
     </div>
     <img src="assets/ganaciaMuscular.jfif" alt="Avatar" class="imgPlan">
     <div class="pie">
