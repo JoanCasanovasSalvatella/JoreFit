@@ -4,7 +4,7 @@ export interface ejercicios{
   nombres: string;
   descripcion : string;
   series : number;
-  repeticiones: number;
+  repeticiones: string;
   tipo: string;
   musculo: string;
   intensidad: string;
