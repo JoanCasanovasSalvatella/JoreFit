@@ -71,9 +71,8 @@ button.gestiones:hover{
 }
 
 @media (max-width: 320px){
-  .header{
-    max-width: 165.3vw;
-    width: 165.3vw;
+  div.header{
+    width: 167vw;
   }
 
   div.gestion{
@@ -81,35 +80,39 @@ button.gestiones:hover{
     display: grid;
     gap: 0;
     background-color:#474747;
-    padding-left: 65.5vw;
+    padding-left: 25.5vw;
+    width: 55vw;
   }
 
   button.gestiones{
     margin-top: 1vh;
     margin-right: 1vw;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    width: 35vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    width: 50vw;
     height: 4vh;
     text-align: center;
     background-color: #15CCCC;
     color: black;
     border: none;
     border-radius: 2vh;
-    font-size: 14px;
+    font-size: 18px;
     min-width: 12vw;
     min-height: 3vh;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 
   .login, .signin{
-    width: 4vw;
-    height: 2vh;
+    width: 6vw;
+    height: 3vh;
     float: right;
-    margin-right: 2vw;
+    margin: 0px;
   }
 
   h1.title{
-    width: 100%;
+    width: 90%;
     height: 11vh;
     text-align: center;
     margin-top: 3vh;
