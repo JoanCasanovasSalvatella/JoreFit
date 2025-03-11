@@ -130,6 +130,14 @@ h3{
 }
 
 @media (max-width: 320px) {
+  .contenido{
+    width: 100%;
+  }
+  .mainIMG{
+    width: 167vw;
+    height: auto;
+  }
+
   .planes{
     width: 167vw;
   }
