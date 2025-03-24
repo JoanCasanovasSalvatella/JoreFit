@@ -2,19 +2,27 @@
 
   <div class="a">
     <div class="linea"></div>
-      <span class="seccion">Plna de {{ selectedPlan.nombre }}</span>
+      <span class="seccion">Plan de {{ selectedPlan.nombre }}</span>
     <div class="linea"></div>
   </div>
 
-  <p><strong>NIVEL: </strong>{{ selectedNivel }}</p>
-
+  <p class="level"><strong>NIVEL: </strong>{{ selectedNivel }}</p>
   @if(selectedEjercicios.length > 1) {
     @for (selectedEjercicio of selectedEjercicios; track $index) {
-      <p><strong>NOMBRE: </strong>{{selectedEjercicio.nombres}}</p>
-      <p><strong>DESCIPCION: </strong>{{selectedEjercicio.descripcion}}</p>
-      <p><strong>SERIES: </strong>{{selectedEjercicio.series}}</p>
-      <p><strong>REPETICIONES: </strong>{{selectedEjercicio.repeticiones}}</p>
-      <p><strong>MUSCULO A TRABAJAR: </strong>{{selectedEjercicio.musculo}}</p>
+      <div class="ejercicio">
+        <div class="imagenEjer">
+          <img [src]="selectedEjercicio.imagen" class="entrenamiento">
+        </div>
+        <div class="contenido">
+          <h2>{{selectedEjercicio.nombres}}</h2>
+          <p>{{selectedEjercicio.descripcion}}</p>
+          <div class="series">
+            <p><strong>SERIES: </strong>{{selectedEjercicio.series}}</p>
+            <p><strong>REPETICIONES: </strong>{{selectedEjercicio.repeticiones}}</p>
+          </div>
+          <!--<p><strong>MUSCULO A TRABAJAR: </strong>{{selectedEjercicio.musculo}}</p>-->
+        </div>
+      </div>
     }
   } @else {
     <div class="a">

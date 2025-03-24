@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
 *{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Istock Web';
 }
 
 .linea{
@@ -22,4 +24,48 @@
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.ejercicio{
+  display: flex;
+  background-color: rgb(215, 215, 215);
+  margin: 10px;
+  border-radius: 20px;
+  width: 60%;
+  justify-self: center;
+}
+
+.entrenamiento{
+  width: 180px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.imagenEjer{
+  width: 30%;
+  text-align: center;
+}
+
+.level{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.series{
+  display: flex;
+  margin-left: 50px;
+  gap: 30px;
+  font-weight: bold;
+}
+
+.contenido{
+  font-size: 15px;
+}
+
+/*Estilos html*/
+h2{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
 }
