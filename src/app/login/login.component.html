@@ -1,27 +1,48 @@
-<div class="a">
-  <div class="linea"></div>
-    <span class="seccion">Bienvenido de vuelta!</span>
-  <div class="linea"></div>
+<!-- Import de iconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="apartado">
+  <span class="seccion" aria-label="Mis planes">Bienvenido de vuelta!</span>
+  <hr>
 </div>
 
-<div class="cuadro">
-  <span class="seccion">Inicia Sesion</span>
-</div>
-<div class="datos">
-  <form>
-    <div class="campos">
-      <label>Nombre de usuario</label>
-      <input type="text" name="nick">
-      <br>
-      <label>Contraseña</label>
-      <input type="text" name="contrasena">
+<div class="secciones">
+  <!--Columna izquierda-->
+  <div class="menu">
+    <h3>Inicio de sesión</h3>
+    <i class="fa-solid fa-dumbbell gym"></i><br>
+  </div>
+
+  <!--Columna del contenido-->
+  <div class="menu2">
+    <div class="formulario">
+      <div class="icon">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <div class="cuadro">
+        <span class="seccion">Hola de nuevo!</span>
+      </div><br>
+      <div class="datos">
+            <form>
+            <div class="campos">
+            <!--<label>Nombre</label>-->
+            <input type="email" name="mail" placeholder="Introduce tu correo">
+            <br>
+            <!--<label>Apellido</label>-->
+            <input type="password" name="password" placeholder="Escribe tu contraseña">
+            <br>
+            <br>
+            </div>
+            <button class="boton" type="submit">Iniciar sesión <i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
+
+        <h5>¿No tienes cuenta? <a routerLink="/register">REGISTRATE</a></h5>
+        <h5>¿Has olvidado tu contraseña?</h5><a routerLink="/login/recover_password">Recuperar contraseña</a>
+        <br><br>
+      </div>
     </div>
-    <br>
-    <br>
-    <button class="boton" type="submit">Iniciar Sesion</button>
-  </form>
-
-  <h5>¿No tienes cuenta? <a routerLink="/register">REGISTRATE</a></h5>
+  </div>
 </div>
+
 
 <app-footer2></app-footer2>
