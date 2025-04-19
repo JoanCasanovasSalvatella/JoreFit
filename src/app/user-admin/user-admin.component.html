@@ -1,0 +1,58 @@
+<!-- Import de iconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="top">
+  <div class="img">
+    <img src="assets/JoreFIT-LOGO.png" alt="" class="icon" routerLink="/"><!--Logo-->
+  </div>
+  <div class="menu">
+    <h1>Area administrativa </h1>
+    <h3>Lista de usuarios</h3>
+  </div>
+</div>
+<hr>
+<div class="navegacion">
+  <div class="navigation">
+    <button class="return" routerLink="/profile/admin"><i class="fa-solid fa-arrow-left"></i></button>
+  </div>
+
+  <div class="search">
+    <h4>Buscar usuario</h4>
+    <input type="text" placeholder="Buscar usuario" id="searchBar">
+  </div>
+</div>
+
+
+<div class="users">
+  <!-- Tarjeta del Usuario Juan -->
+  <div class="userCard">
+    <div class="datos">
+      <p><strong>Nombre:</strong> Juan</p>
+      <p><strong>Apellido:</strong> Pérez</p>
+      <p><strong>Usuario:</strong> juanperez</p>
+      <p><strong>Nivel:</strong> Intermedio</p>
+    </div>
+    <br> <!-- Salto de línea antes de las opciones -->
+    <div class="options">
+      <button class="gestion"><i class="fas fa-pen"></i> Modificar</button>
+      <button class="see"><i class="fas fa-eye"></i> Ver planes</button>
+      <button class="delete"><i class="fas fa-trash"></i> Eliminar</button>
+    </div>
+  </div>
+
+  <!-- Tarjeta del Usuario María -->
+  <div class="userCard">
+    <div class="datos">
+      <p><strong>Nombre:</strong> María</p>
+      <p><strong>Apellido:</strong> Gómez</p>
+      <p><strong>Usuario:</strong> mariagomez</p>
+      <p><strong>Nivel:</strong> Avanzado</p>
+    </div>
+    <br> <!-- Salto de línea antes de las opciones -->
+    <div class="options">
+      <button class="gestion"><i class="fas fa-pen"></i> Modificar</button>
+      <button class="see"><i class="fas fa-eye"></i> Ver planes</button>
+      <button class="delete"><i class="fas fa-trash"></i> Eliminar</button>
+    </div>
+  </div>
+</div>

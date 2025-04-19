@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+*{
+  font-family:'Istock Web';
+}
+
+.datos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-self: center;
+}
+
+.users{
+  justify-items: center;
+}
+
+.userCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin: 35px 10px;
+  width: 60%;
+}
+
+.options{
+  justify-self: center;
+  text-align: center;
+}
+
+.gestion{
+  color: #fff;
+  background-color: #17A2B8;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+  width: 13vw;
+  height: 4vh;
+  font-size: 16px;
+}
+
+.see{
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+  width: 13vw;
+  height: 4vh;
+  font-size: 16px;
+}
+
+.delete{
+  color: #fff;
+  background-color: #c82333;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+  width: 13vw;
+  height: 4vh;
+  font-size: 16px;
+}
+
+.gestion:hover, .see:hover, .delete:hover {
+  opacity: 0.8;
+}
+
+.top{
+  justify-self: center;
+  display: flex;
+  gap: 25px;
+}
+
+.icon{
+  width: 140px
+}
+
+.menu{
+  display: grid;
+  text-align: center;
+}
+
+.menu h3{
+  margin-top: -30px;
+}
+
+.return{
+  margin-left: 10px;
+  background-color: #00c6c6;
+  height: 3vh;
+  border-radius: 7px;
+  border: none;
+}
+
+.return i{
+  margin: 0px;
+  padding: 2px;
+}
+
+.navegacion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3vh;
+}
+
+.search{
+  display: flex;
+  justify-self: right;
+  margin:20px;
+  color: black;
+  padding-left: 70%;
+}
+
+
+/*Estilos html*/
+p{
+  font-size: 18px;
+}
+
+input{
+  height: 4vh;
+  margin: 1vw 1vh;
+  border-radius: 7px;
+  border-style: ridge;
+  border-color: black;
+  color: black;
+}
+
+input::placeholder{
+  color: rgba(181, 181, 181, 0.628);
+  font-size: 16px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .menu h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .datos {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .userCard {
+    width: 90%;
+  }
+
+  .options button{
+    font-size: 15px;
+  }
+
+  button .gestion, button .see, button .delete {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icon {
+    width: 100px;
+    display: none;
+  }
+
+  .search {
+    padding-left: 70px;
+    justify-content: center;
+    margin: 10px 10px;
+    gap: 10px;
+  }
+
+  .search h4{
+    white-space: nowrap;
+  }
+
+  .search input{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .users{
+    width: 95%;
+    justify-self: center;
+  }
+  .gestion, .see, .delete {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .menu h3 {
+    font-size: 18px;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
