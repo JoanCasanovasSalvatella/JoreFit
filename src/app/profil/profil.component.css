@@ -1,5 +1,16 @@
+/*Imports de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/**/
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Rubik';
+}
+
+.header{
+  background-color: #00c6c6;
+  margin: 0;
+  padding: 0;
+  height: 12vh;
 }
 
 /*Propiedades de la seccion de perfil*/
@@ -12,30 +23,38 @@
 .pfp{
   max-width: 10vw;
   border-radius: 100%;
-  margin-left: 1vw;
-  margin-top: 2vh;
+  margin-left: 4vw;
+  margin-top: -7vh;
+  border: 10px solid #00c6c6;
+}
+
+.datos{
+  margin-left: 17vw;
+  margin-top: -10vh;
+  display: flex;
+  gap: 20px;
 }
 
 .botones{
-  display: grid;
-  gap: 3vh;
-  margin-top: 2vh;
-
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 27vw;
+  gap: 10px;
 }
 
 button{
-  width: 20vw;
-  margin-left: 47vw;
+  width: 7vw;
   background-color: #15CCCC;
   border: none;
   border-radius: 15px;
-  height: 6vh;
+  height: 3vh;
   color: black;
   border: none;
   border-radius: 2vh;
-  font-size: 18px;
-  min-width: 10vw;
-  min-height: 6.5vh;
+  font-size: 14px;
+  min-width: 9vw;
+  min-height: 5vh;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -43,6 +62,89 @@ button:hover {
   background-size: 300% 300%;
   animation: gradienteAnimado 3s infinite alternate;
   color: white;
+}
+
+.apartado{
+  margin-top: 100px;
+}
+
+.apartado span{
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.apartado hr{
+  border: none;
+  height: 5px;
+  background-color: #00c6c6;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.addPlan{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.botonPlan{
+  background-color: #00c6c6;
+  color: black;
+  border: none;
+  border-radius: 2vh;
+  font-size: 14px;
+  min-width: 10vw;
+  min-height: 5vh;
+  white-space: nowrap;
+}
+
+.plan{
+  display: flex;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card{
+  background-color: #474747;
+  height: 100%;
+  margin: 2vw;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.titulo{
+  background-color: #00c6c6;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.imgPlan{
+  width: 100%;
+  height: 60vh;
+}
+
+.pie{
+  background-color: #474747;
+  height: 13vh;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  border-radius:  0px 0px 10px 10px;
+}
+
+.extraData{
+  height: 7vh;
+}
+
+.asignados{
+  width: 60%;
 }
 
 @keyframes gradienteAnimado {
@@ -55,19 +157,21 @@ button:hover {
   display: flex;
   gap: 1vw;
   text-align: center;
+  width: 12vw;
+  margin-right: 2vw;
+}
+
+.name p{
+  font-size: 14px;
+  margin-top: 2.3vh;
+  margin-left: 0.5vw;
 }
 
 h3{
-  width: 80px;
-  white-space: nowrap;
-  font-size: large;
-}
-
-h4{
-  margin-left: 100%;
-  text-align: center;
   width: 100%;
   white-space: nowrap;
+  font-size: large;
+  text-align: center;
 }
 
 .encabezado2{
@@ -96,159 +200,100 @@ h4{
   padding-top: 15px;
 }
 
-.addPlan{
-  margin-left: -7vw;
-}
-
-.plan{
-  display: flex;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.card{
-  background-color: #474747;
-  height: 66vh;
-  margin: 2vw;
-  width: 50%;
-  text-align: center;
-  box-shadow: rgb(117, 117, 117) 13px 13px 7px 0px;
-}
-
-.titulo{
-  background-color: #00c6c6;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  text-align: center;
-  padding-left: 6vw;
-}
-
-.imgPlan{
-  width: 100%;
-}
-
-.pie{
-  background-color: #474747;
-  height: 8vh;
-  text-align: center;
-  color: white;
-  font-size: medium;
-}
-
 img{
   width: 100%;
 }
 
 .img2{
-  height: 75.5%;
+  height: 66%;
 }
 
-@media(max-width:320px){
-  .perfil{
-    display: flex;
-    gap: 1vw;
-    width: 70vw;
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  h3{
+    text-align: center;
+  }
+  
+  .header {
+    height: 10vh;
   }
 
-  .imagen{
-    min-width: 15vw;
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
   }
 
-  .pfp{
+  .pfp {
+    max-width: 20vw;
+    margin-left: 0;
+    margin-top: -5vh;
+  }
+
+  .datos {
+    margin-left: 0;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .botones {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  button {
+    width: auto;
+    font-size: 14px;
     min-width: 30vw;
-    margin-right: 20vw;
   }
 
-  .datos{
-    margin-left: 5vw;
+  .apartado span {
+    font-size: 24px;
   }
 
-  .addPlan{
-    min-width: 60vw;
+  .plan {
+    flex-direction: column;
+    width: 90%;
   }
 
-  .boton{
-    min-width: 30vw;
-    margin-left: 16vw;
-  }
-
-  .encabezado2{
-    max-width: 165.3vw;
-    width: 165.3vw;
-  }
-
-  .addPlan{
-    text-align: center;
-    max-width: 165.3vw;
-    width: 165.3vw;
-  }
-
-  .botonPlan{
-    min-width: 100vw;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 13vw;
-    margin-bottom: 7vh;
-  }
-
-  .botonPlan:hover{
-    color: white;
-  }
-
-  /*Propiedades del contenedor de los planes*/
-  .plan{
-    min-width: 100%;
-    max-width: 165.3vw;
-    width: 165.3vw;
-    text-align: center;
-    margin-left: 0vw;
-    gap: 15vw;
-    display: grid;
-  }
-
-  .card{
-    width: 97%;
+  .card {
+    width: 95%;
     height: auto;
-    box-shadow: rgb(117, 117, 117) 13px 13px 7px 0px;
-    margin-bottom: 10vh;
+    text-align: center;
   }
 
   .titulo{
-    width: 93.7%;
-    font-size: large;
-    text-align: center;
-    padding-left: 10vw;
+    background-color: #00c6c6;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center; /* Centra el texto */
+    border-radius: 10px 10px 0px 0px;
+  }  
+
+  .encabezado2 {
+    flex-direction: column;
+    gap: 5px;
   }
 
-  .imgPlan{
-    width: 100%;
-    height: auto;
+  .linea {
+    height: 5px;
+    max-width: 300px;
   }
 
-  .pie{
-    margin-bottom: 7vh;
+  .seccion {
+    font-size: 24px;
   }
 
-  p{
-    font-size: 20px;
+  .name {
+    width: auto;
+    margin-right: 0;
   }
 
-  .img2{
-    height: auto;
-  }
-
-  h3{
-    font-size: 25px;
-    margin-left: 35vw;
-  }
-  h4{
-    margin-left: 25vw;
-    margin-right: 0vw;
-  }
-
-  .name h3{
-    margin-left: 13vw;
-    font-size: 16px;
+  .name p {
+    font-size: 12px;
+    margin-top: 1vh;
   }
 }
+

@@ -1,42 +1,41 @@
-<!--Division que contendra la seccion que muestra los datos del usuario-->
-<div class="perfil">
-  <!--Diviciones para cada 'columna' de la seccion-->
-  <div class="imagen">
-    <!--Imagen de perfil del usuario-->
-    <img src="assets/pfp.jpg" alt="Imagen de perfil" class="pfp">
-  </div>
-  <div class="datos">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!--Encabezado del perfil-->
+<div class="header">
+  <br>
+</div>
+<!--Divicion que contendra la seccion que muestra la imagen de perfil del usuario-->
+<div class="imagen">
+  <!--Imagen de perfil del usuario-->
+  <img src="assets/pfp.jpg" alt="Imagen de perfil" class="pfp">
+</div>
+
+<div class="datos">
+  <div class="userData">
     <div class="name">
     <!--Nombre real del usuario-->
-    <h3>Nombre: </h3><h4>{{usuarios.users.nombre}}</h4>
+    <i class="fa-solid fa-address-book"></i><p>{{usuarios.users.nombre}}</p>
     </div>
     <div class="name">
     <!--Nombre de usuario-->
-    <h3>Nombre de usuario:</h3><h4>{{usuarios.users.usuario}}</h4>
-    </div>
-    <div class="name">
-      <!--Contraseña del usuario-->
-      <h3>Contraseña:</h3><h4>{{usuarios.users.contrasena}}</h4>
-    </div>
+    <i class="fa-solid fa-envelope"></i><p>{{usuarios.users.correo}}</p>
+    </div><br>
   </div>
   <div class="botones">
     <!--Boton para editar los datos del usuario-->
-    <button aria-label="Editar perfil" class="boton">Editar</button>
+    <button aria-label="Editar perfil" class="boton" routerLink="/profile/update">Editar <i class="fa-solid fa-user-pen"></i></button>
     <!--Boton para cerrar sesion-->
-    <button aria-label="Cerrar sesión" class="boton" routerLink="/login">Cerrar sesión</button>
+    <button aria-label="Cerrar sesión" class="boton" routerLink="/login">Cerrar sesión <i class="fa-solid fa-door-open"></i></button>
   </div>
 </div>
-
-<!--Seccion de los planes contratados-->
-<div class="encabezado2">
-  <div class="linea"></div>
+  <div class="apartado">
     <span class="seccion" aria-label="Mis planes">Mis planes</span>
-  <div class="linea"></div>
-</div>
+    <hr>
+  </div>
 
 <!--Listado de planes-->
 <div class="addPlan">
-  <button class="botonPlan" aria-label="Agregar plan">Agregar plan</button>
+  <button class="botonPlan" aria-label="Agregar plan" routerLink="/profile/addPlan">Agregar plan <i class="fa-solid fa-plus"></i></button>
 </div>
 
 <!-- Tarjetas de varios planes -->
@@ -48,8 +47,11 @@
     </div>
     <img src="assets/ganaciaMuscular.jfif" alt="Avatar" class="imgPlan">
     <div class="pie">
-      <p>Dificultad: Facil</p>
-      <p>Peso objetivo: 70kg</p>
+      <div class="extraData">
+        <p>Dificultad: Facil</p>
+        <p>Peso objetivo: 70kg</p>
+      </div>
+      <button class="asignados" routerLink="/profile/ejerciciosAsignados">Ver plan</button>
     </div>
   </div>
 
@@ -58,13 +60,17 @@
     <div class="titulo">
       <h3>Ejercicio cardiobascular</h3>
     </div>
-    <img src="assets/ejercicioCardiobascular.jpg" alt="Avatar" class="img2">
+    <img src="assets/ejercicioCardiobascular.jpg" alt="Avatar" class="imgPlan">
     <div class="pie">
+      <div class="extraData">
       <p>Dificultad: Media</p>
+      <!--<p> peso objetivo</p>-->
+      </div>
+      <button class="asignados">Ver plan</button>
     </div>
   </div>
 </div>
-<br><br><br>
+<br><br><br><br><br><br>
 
 <!--Mostrar el pie de pagina-->
 <app-footer2></app-footer2>
