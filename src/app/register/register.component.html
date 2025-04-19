@@ -1,82 +1,63 @@
-<div class="a">
-  <div class="linea"></div>
-    <span class="seccion">Bienvenido a JoreFIT. Pongamonos Fuertes!</span>
-  <div class="linea"></div>
-</div>
+<!-- Import de iconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<div class="cuadro">
-  <span class="seccion">Cuentanos sobre ti</span>
-</div>
-<div class="datos">
-    <form>
-      <div class="campos">
-      <label>Nombre</label>
-      <input type="text" name="nombre">
-      <br>
-      <label>Apellido</label>
-      <input type="text" name="apellido">
-      <br>
-      <label>Nombre de usuario</label>
-      <input type="text" name="nick">
-      <br>
-      <label>Contraseña</label>
-      <input type="text" name="contrasena">
-      <br>
-      <div class="fecha">
-        <label>Fecha de nacimiento</label>
-      </div>
-      <br>
-      <div class="nacimiento">
-        <input type="date" name="fech_nac">
-      </div>
-      <div class="nivel">
-        <label>Nivel</label>
-      </div>
-      <br>
-      <div class="experiencia">
-        <select name="nivel">
-          <option>---SELECIONAR---</option>
-          <option value="AFICIONADO">AFICIONADO</option>
-          <option value="INTERMEDIO">INTERMEDIO</option>
-          <option value="AVANZADO">AVANZADO</option>
-        </select>
-      </div>
-      </div>
-      <button class="boton" type="submit">Registrarse</button>
-    </form>
+  <div class="apartado">
+    <span class="seccion" aria-label="Mis planes">Bienvenido a JoreFIT. Pongamonos Fuertes!</span>
+    <hr>
+  </div>
 
-  <h5>¿Ya tienes una cuenta? <a routerLink="/login">INICIA SESION</a></h5>
-</div>
+<div class="secciones">
+  <!--Columna izquierda-->
+  <div class="menu">
+    <h3>Nuevo perfil - Cliente</h3>
+    <i class="fa-solid fa-dumbbell gym"></i><br>
 
-<div class="cuadro">
-  <span class="seccion">¿Que esperas conseguir?</span>
-</div>
-<div class="datos">
-  <form>
-    <label class="label_Objetivo">Objetivo</label>
-    <br>
-    <div class="objetivo">
-      <select name="nivel">
-        <option>---SELECIONAR---</option>
-        <option value="Ganar Masa Muscular">Ganar Masa Muscular</option>
-        <option value="Perder Peso Y Grasa">Perder Peso Y Grasa</option>
-        <option value="Aumentar Tu Rendimiento">Aumentar Tu Rendimiento</option>
-      </select>
+    <!--Iconos de redes sociales(No funcionales)-->
+    <div class="redes">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook facebook"></i>
     </div>
-    <br>
-    <div class="pesoActual">
-      <label class="lblPesoA">Peso Actual</label>
-    </div>
-    <input class="pesoA" type="number" step="0.01" min="0" name="pesoActual">
-    <br>
-    <div class="pesoObjetivo">
-      <label class="lblPesoO">Peso Objetivo</label>
-    </div>
-    <input class="pesoO" type="number" step="0.01" min="0" name="pesoObjetivo">
-    <br>
-    <br>
-    <button class="boton" type="submit">Guardar</button>
-  </form>
-</div>
+  </div>
 
-<app-footer2></app-footer2>
+  <!--Columna del contenido-->
+  <div class="menu2">
+    <div class="formulario">
+      <div class="icon">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <div class="cuadro">
+        <span class="seccion">Unete a nuestra comunidad</span>
+      </div><br>
+      <div class="datos">
+            <form>
+            <div class="campos">
+            <!--<label>Nombre</label>-->
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            <br>
+            <!--<label>Apellido</label>-->
+            <input type="text" name="apellido" placeholder="Escribe tu apellido">
+            <br>
+            <!--<label>Correo electrónico</label>-->
+            <input type="email" name="mail" placeholder="Elije un correo electrónico">
+            <br>
+            <!--<label>Contraseña</label>-->
+            <input type="password" name="contrasena" placeholder="Elije una contraseña">
+            <br>
+            <div class="fecha">
+              <!--<label>Fecha de nacimiento</label>-->
+            </div>
+            <br>
+            <div class="nacimiento">
+              <input type="date" name="fech_nac">
+            </div>
+            <br>
+            </div>
+            <button class="boton" type="submit">Registrarse <i class="fa-solid fa-user-plus register"></i></button>
+            </form>
+
+        <h5>¿Ya tienes una cuenta? <a routerLink="/login">INICIA SESION</a></h5>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<app-footer2></app-footer2>-->

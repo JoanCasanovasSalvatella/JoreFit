@@ -1,161 +1,285 @@
+/*Imports de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/**/
 *{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Rubik';
 }
 
-a{
-  text-decoration: none;
-  color:#15CCCC
+.apartado{
+  margin-top: 80px;
+  margin-bottom: 3%;
+  width: 100%;
+  height: 10vh;
 }
 
-.linea{
-  flex-grow: 1;
-  height: 8px;
-  background-color: #00c6c6;
-  max-width: 550px;
-  margin-top: 15px;
-}
-
-.seccion{
-  font-size: 34px;
+.apartado span{
+  padding-left: 10px;
+  font-size: 27px;
   font-weight: bold;
-  text-align: center;
-  padding-top: 15px;
-  margin-top: -15px;
 }
 
-.a{
-  display: flex;
-  margin-top: 50px;
+.apartado hr{
+  border: none;
+  height: 5px;
+  background-color: #04a4a4;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
-.cuadro{
-  background-color:#15CCCC;
-  text-align: center;
-  height: 80px;
-  width: 700px;
-  padding-top: 40px;
-  margin-left: 22%;
-  border-bottom: 2px solid black;
+.icon{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 45px;
+  justify-self: center;
+  color: #04a4a4;
+}
+
+.cuadro, .datos{
+  justify-self: center;
 }
 
 .datos{
-  background-color:#D9D9D9;
+  justify-self: center;
+}
+
+.campos{
+  width: 50vw;
+  justify-self: center;
+}
+
+.secciones{
+  display: flex;
+}
+
+.menu{
+  background-color: #04a4a4;
+  border-radius: 0px 17px 0px 0px;
+  width: 40vh;
+  margin-top: -50px;
   text-align: center;
-  height: 500px;
-  width: 700px;
-  padding-top: 40px;
-  margin-left: 22%;
-  margin-bottom: 50px;
+}
+
+.menu2{
+  background-color:white;
+  width: 75%;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.menu, .menu2{
+  height: 72.5vh;
+}
+
+.menu h3{
+  color: white;
+  font-size: 20px;
+}
+
+form{
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  border-radius: 7px;
+}
+
+form button{
+  background-color: #02b3b3;
+  width: 15vw;
+  height: 5vh;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+button{
+  color: white;
 }
 
 label{
   display: inline-block;
-  width: 200px;
-  font-size: 23px;
+  width: 150px;
   text-align: left;
 }
 
-.campos{
-  text-align: center;
-  padding-left: 40px;
-  padding-bottom: 40px;
+input[type="text"], input[type="email"], input[type="password"]{
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
 }
 
-input{
-  margin-bottom: 10px;
-  margin-left: 20px;
-  border: none;
-  height: 20px;
+input[type="date"] {
+  appearance: none; /* Elimina el estilo predeterminado del navegador */
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #333;
 }
 
-input[type="date"]{
-  height: 20px;
+a{
+  text-decoration: none;
+  color: black;
 }
 
-select{
-  border: none;
-  height: 20px;
+a:hover{
+  color: #00c6c6;
+  text-decoration: none;
 }
 
-.fecha{
-  margin-top: 50px;
-  margin-left: -15vw;
+.gym{
+  margin-top: 15vh;
+  font-size: 90px;
 }
 
-.nacimiento{
-  margin-left: -23vw;
-  margin-top: 1px;
+.redes i{
+  margin: 10px;
+  font-size: 30px;
+  color:#333
 }
 
-.nivel{
-  margin-left: 23vw;
-  margin-top: -100px;
-  margin-bottom: -3px;
+.redes i:hover {
+  color: #d47c3e;
+  animation: bounce 0.5s ease-in-out; /* Animación rebote */
 }
 
-.experiencia{
-  margin-left: 150px;
-  margin-top: 27px;
-  height: 40px;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Rebote hacia arriba */
+  }
 }
 
-.boton{
-  background-color:#15CCCC;
-  color: white;
-  text-align: center;
-  height: 70px;
-  width: 500px;
-  border: 1px solid black;
+button i{
+  margin-left: 5px;
+}
+
+.cuerpo{
+  margin-top: -12vh;
+}
+
+.cuadro{
   font-size: 20px;
+  font-weight: bold;
+  color: #04a4a4;
 }
 
-.objetivo{
-  margin-top: 40px;
+.tipo{
+  margin-top: 20vh;
+  gap: 15px;
 }
-
-.pesoActual{
-  margin-top: 40px;
-  margin-left: 100px;
-  background-color:#15CCCC;
+.tipo button {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+  border: 2px solid black;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
   text-align: center;
-  height: 50px;
-  width: 200px;
-  padding-top: 20px;
-  border: 1px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.lblPesoA{
-  margin-left: 20%;
-  width: 199px;
+.tipo button:hover {
+  background-color: #f0f0f0;
+  color: #04a4a4;
 }
 
-.lblPesoO{
-  margin-left: 15%;
-  width: 199px;
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .apartado {
+    margin-top: 50px;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .apartado span {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    width: 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+  }
+
+  .campos {
+    width: 80vw;
+  }
+
+  .menu {
+    width: 30%;
+    display: none;
+    height: auto;
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .menu2 {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  form button {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 70%;
+  }
+
+  .gym {
+    font-size: 40px;
+    margin-top: 10vh;
+  }
+
+  .tipo button {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .redes i {
+    font-size: 25px;
+  }
+
+  h5{
+    font-size: 13px;
+  }
 }
 
-.pesoObjetivo{
-  margin-left: 400px;
-  margin-top: -105px;
-  background-color:#15CCCC;
-  text-align: center;
-  height: 50px;
-  width: 200px;
-  padding-top: 20px;
-  border: 1px solid black;
-}
+@media (max-width: 480px) {
+  .apartado span {
+    font-size: 18px;
+  }
 
-.pesoA{
-  margin-left: -297.5px;
-  width: 199px;
-}
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
 
-.pesoO{
-  margin-right: -283px;
-  width: 197px;
-}
+  .gym {
+    font-size: 40px;
+    margin-top: 5vh;
+  }
 
-.label_Objetivo{
-  text-align: center;
+  .tipo button {
+    width: 90%;
+    font-size: 12px;
+  }
 }
