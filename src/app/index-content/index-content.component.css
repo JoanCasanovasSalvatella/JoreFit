@@ -24,6 +24,11 @@ img{
   margin-top: -2vh;
 }
 
+.container{
+  color: #04c6c6;
+  font-size: 18px;
+}
+
 h3.lowText{
   width: 100%;
   color:#04c6c6;
@@ -73,8 +78,8 @@ h3.lowText{
 .card{
   background-color: #474747;
   height: 66vh;
-  width: 35%;
-  margin: 2vw;
+  width: 23%;
+  margin: 2vw 4vw;
   text-align: center;
   border-radius: 7px;
 }
@@ -150,7 +155,7 @@ h3{
   font-family: Helvetica;
 }
 
-.seeMore{
+/*.seeMore{
   background-color: #EFB22F;
   width: 18vw;
   border: none;
@@ -158,11 +163,11 @@ h3{
   font-size: 20px;
   border-radius: 5px;
   margin: 5px;
-}
+}*/
 
 .seePlans{
   background-color: #EFB22F;
-  width: 35vw;
+  width: 20%;
   border: none;
   height: 5vh;
   font-size: 20px;
@@ -175,132 +180,108 @@ h3{
   text-align: center;
 }
 
-@media (max-width: 425px){
-  h1{
-    text-align: center;
+/* Responsive Design */
+@media (max-width: 768px) {
+  img {
+    height: auto;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-top: 0vh;
+  }
+
+  .subtitle {
+    height: 10vh;
+    margin-top: -1vh;
   }
 
   .apartado{
-    text-align: center;
-  }
-
-  .planes-container{
-    justify-items: center;
-    display: grid;
-  }
-
-  .card{
-    width: 90%;
-    margin: 5vw;
-    height: 70vh;
-    font-size: 30px;
-  }
-
-  .seeMore{
-    width: 90%;
-    height: 6.5vh;
-    font-size: 18px;
-  }
-
-  .seePlans{
-    width: 80vw;
-    border: none;
-    height: 5vh;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 375px){
-  h1{
-    text-align: center;
-  }
-
-  .apartado{
-    text-align: center;
-  }
-
-  .texto{
-    margin-top: -5px;
-    margin-left: -5px;
+    margin-top: 50px;
+    width: 95%;
+    height: auto;
+    justify-content: center;
     justify-self: center;
+    text-align: center;
   }
 
-  .planes-container{
-    justify-items: center;
-    display: grid;
+  .apartado span {
+    font-size: 24px;
   }
 
-  .card{
-    width: 90%;
-    margin: 5vw;
-    height: 70vh;
-    font-size: 30px;
+  .apartado i {
+    font-size: 24px;
   }
 
-  .seeMore{
-    width: 90%;
-    height: 6.5vh;
-    font-size: 18px;
+  .card {
+    width: 80%; /* Ajustar el ancho de las tarjetas */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin: 10px auto; /* Centrar las tarjetas */
   }
 
-  .seePlans{
-    width: 80vw;
-    border: none;
-    height: 5vh;
-    font-size: 18px;
+  .card img{
+    height: auto; /* Ajustar la altura de las imágenes */
   }
-}
 
-@media (max-width: 320px) {
-  .contenido{
-    width: 167%;
-    height: 100vh;
+  .subtitle2 {
+    width: 80%;
     margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    font-size: 14px;
   }
 
-  h1{
+  h2.text {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .texto {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2vh;
+  }
+
+  .rutina {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .plan {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  button.seeMore {
+    width: 90%; /* Ajustar el ancho de los botones */
+    height: 5vh;
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+  }
+
+  .container{
+    height: 3.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    margin-top: -15vh;
     text-align: center;
   }
 
-  h3{
-    font-size: 25px;
-    font-family: Helvetica;
+  .subtitle {
+    height: 8vh;
   }
 
-  .apartado{
-    text-align: center;
+  .apartado span {
+    font-size: 20px;
   }
 
-  .texto{
-    margin-top: -5px;
-    justify-self: center;
+  h2.text {
+    font-size: 20px;
   }
 
-  .planes-container{
-    justify-items: center;
-    display: grid;
-  }
-
-  .card{
-    width: 90%;
-    margin: 5vw;
-    height: 72vh;
-    font-size: 30px;
-  }
-
-  .seeMore{
-    width: 90%;
-    height: 6.5vh;
-    font-size: 25px;
-  }
-
-  .seePlans{
-    width: 135vw;
-    border: none;
-    height: 6vh;
-    font-size: 25px;
+  .seePlans {
+    width: 50%;
+    font-size: 16px;
   }
 }

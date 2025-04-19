@@ -22,15 +22,19 @@
     <!-- Targetas de varios planes -->
     <div class="planes-container">
       @for (plan of planes; let index = $index; track index) {
+        <!--Se muestran una cantidad limitada de planes-->
+        @if(index != 3) {
         <div class="card">
           <div class="titulo">
             <h3>{{ plan.nombre }}</h3>
           </div>
           <img [src]="plan.imagen" alt="Imagen del plan">
           <div class="container">
-            <button class="seeMore" [routerLink]="plan.nombre">Saber más</button>
+            <p><strong>Precio: </strong>{{plan.precio}}€<p></p>
+            <!--<button class="seeMore" [routerLink]="plan.nombre">Ver plan</button>-->
           </div>
         </div>
+      }
       }
     </div>
 
