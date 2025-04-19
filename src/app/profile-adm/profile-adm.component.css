@@ -1,5 +1,16 @@
+/*Imports de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/**/
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Rubik';
+}
+
+.header{
+  background-color: #00c6c6;
+  margin: 0;
+  padding: 0;
+  height: 12vh;
 }
 
 /*Propiedades de la seccion de perfil*/
@@ -12,30 +23,38 @@
 .pfp{
   max-width: 10vw;
   border-radius: 100%;
-  margin-left: 1vw;
-  margin-top: 2vh;
+  margin-left: 4vw;
+  margin-top: -7vh;
+  border: 10px solid #00c6c6;
+}
+
+.datos{
+  margin-left: 17vw;
+  margin-top: -10vh;
+  display: flex;
+  gap: 20px;
 }
 
 .botones{
-  display: grid;
-  gap: 3vh;
-  margin-top: 2vh;
-
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 27vw;
+  gap: 10px;
 }
 
 button{
-  width: 20vw;
-  margin-left: 47vw;
+  width: 7vw;
   background-color: #15CCCC;
   border: none;
   border-radius: 15px;
-  height: 6vh;
+  height: 3vh;
   color: black;
   border: none;
   border-radius: 2vh;
-  font-size: 18px;
-  min-width: 10vw;
-  min-height: 6.5vh;
+  font-size: 14px;
+  min-width: 9vw;
+  min-height: 5vh;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -43,6 +62,81 @@ button:hover {
   background-size: 300% 300%;
   animation: gradienteAnimado 3s infinite alternate;
   color: white;
+}
+
+.apartado{
+  margin-top: 100px;
+}
+
+.apartado span{
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.apartado hr{
+  border: none;
+  height: 5px;
+  background-color: #00c6c6;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.addPlan{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 31.1vh;
+  gap: 10px;
+}
+
+.botonPlan{
+  background-color: #00c6c6;
+  color: black;
+  border: none;
+  border-radius: 2vh;
+  font-size: 14px;
+  min-width: 13vw;
+  min-height: 5vh;
+  white-space: nowrap;
+}
+
+.plan{
+  display: flex;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card{
+  background-color: #474747;
+  height: 66vh;
+  margin: 2vw;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: rgb(117, 117, 117) 13px 13px 7px 0px;
+}
+
+.titulo{
+  background-color: #00c6c6;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+  padding-left: 6vw;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.imgPlan{
+  width: 100%;
+}
+
+.pie{
+  background-color: #474747;
+  height: 8vh;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  border-radius:  0px 0px 10px 10px;
 }
 
 @keyframes gradienteAnimado {
@@ -55,19 +149,20 @@ button:hover {
   display: flex;
   gap: 1vw;
   text-align: center;
+  width: 12vw;
+  margin-right: 2vw;
+}
+
+.name p{
+  font-size: 14px;
+  margin-top: 2.3vh;
+  margin-left: 0.5vw;
 }
 
 h3{
   width: 80px;
   white-space: nowrap;
   font-size: large;
-}
-
-h4{
-  margin-left: 100%;
-  text-align: center;
-  width: 100%;
-  white-space: nowrap;
 }
 
 .encabezado2{
@@ -96,46 +191,6 @@ h4{
   padding-top: 15px;
 }
 
-.addPlan{
-  margin-left: -7vw;
-}
-
-.plan{
-  display: flex;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.card{
-  background-color: #474747;
-  height: 66vh;
-  margin: 2vw;
-  width: 50%;
-  text-align: center;
-  box-shadow: rgb(117, 117, 117) 13px 13px 7px 0px;
-}
-
-.titulo{
-  background-color: #00c6c6;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  text-align: center;
-  padding-left: 6vw;
-}
-
-.imgPlan{
-  width: 100%;
-}
-
-.pie{
-  background-color: #474747;
-  height: 8vh;
-  text-align: center;
-  color: white;
-  font-size: medium;
-}
-
 img{
   width: 100%;
 }
@@ -144,209 +199,241 @@ img{
   height: 75.5%;
 }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.apartado i{
+  font-size: 25px;
+  color: black;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin-top: 2vh;
 }
-
-.opciones{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 10vh; /* Ensure it takes the full height of the viewport */
-}
-
-.gestiones{
-  margin-left: 3vw;
-  margin-right: 1vw;
-  margin-top: 0vh;
-  text-align: center;
-}
-
-/*Version de mobil*/
-@media (max-width: 320px){
-  *{
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  /*Propiedades de la seccion de perfil*/
-  .perfil{
-    display: flex;
-    gap: 3vw;
-    width: 100%;
-    min-width: 100%;
-  }
-
-  /*propiedades de la imagen perfil*/
-  .pfp{
-    max-width: 25vw;
-    width: 25vw;
-    border-radius: 100%;
-    margin-left: 1vw;
-    margin-top: 2vh;
-  }
-
-  .botones{
-    display: grid;
-    gap: 3vh;
-    margin-top: 2vh;
-  }
-
-  button{
-    width: 40vw;
-    margin-left: 47vw;
-    background-color: #15CCCC;
-    border: none;
-    border-radius: 15px;
-    height: 6vh;
-    color: black;
-    border: none;
-    border-radius: 2vh;
-    font-size: 21px;
-    min-width: 7vw;
-    min-height: 6.5vh;
-  }
-
-  button:hover {
-    background: linear-gradient(45deg, #15CCCC, #13B3B3, #129A9A, #139696, #1d9d9d, #15CCCC);
-    background-size: 300% 300%;
-    animation: gradienteAnimado 3s infinite alternate;
-    color: white;
-  }
-
-  @keyframes gradienteAnimado {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .name{
-    display: flex;
-    gap: 1vw;
-    text-align: center;
-  }
-
-  h3{
-    width: 50px;
-    white-space: nowrap;
-    font-size: large;
-  }
-
-  h4{
-    margin-left: 100%;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-  }
-
-  .encabezado2{
-    margin-top: 5vh;
-    margin-bottom: 0vh;
-    display: flex;
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  /* Ajustes para pantallas pequeñas */
+  .perfil {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 7vh;
+    gap: 2vh;
+  }
+
+  .pfp {
+    max-width: 20vw;
+    margin-left: 0;
+    margin-top: -5vh;
+  }
+
+  .datos {
+    margin-left: 0;
+    margin-top: -55px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .botones {
+    margin-left: -5px;
+    margin-top: 2vh;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  button {
+    width: auto;
+    min-width: 60%;
+    font-size: 14px;
+  }
+
+  .addPlan {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .plan {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1vh 0;
+  }
+
+  .titulo {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .userData{
+    display: grid;
+    gap: 0vh;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-right: 0;
+    text-align: center;
+    margin-left: 20vw;
+    margin-top: 3%;
+  }
+
+  .name i{
+    font-size: 14px;
+    margin-top: 0vh;
+  }
+  
+  .name p {
+    font-size: 14px;
+    margin-top: 0vh;
+  }
+
+  .encabezado2 {
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5vh;
   }
 
   .linea {
-    flex-grow: 1;
-    height: 10px;
-    background-color: #00c6c6;
-    max-width: 500px;
-    margin-top: 15px;
+    height: 5px;
+    max-width: 80%;
   }
 
   .seccion {
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    padding-top: 15px;
+    font-size: 24px;
   }
 
-  .addPlan{
-    margin-left: -7vw;
-  }
-
-  .plan{
-    display: flex;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .card{
-    background-color: #474747;
-    height: 66vh;
-    margin: 2vw;
-    width: 50%;
-    text-align: center;
-    box-shadow: rgb(117, 117, 117) 13px 13px 7px 0px;
-  }
-
-  .titulo{
-    background-color: #00c6c6;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    text-align: center;
-    padding-left: 6vw;
-  }
-
-  .imgPlan{
-    width: 100%;
-  }
-
-  .pie{
-    background-color: #474747;
-    height: 8vh;
-    text-align: center;
-    color: white;
-    font-size: medium;
-  }
-
-  img{
-    width: 100%;
-  }
-
-  .img2{
-    height: 75.5%;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .opciones{
-    display: flex;
+  .apartado {
+    width: 95%;
+    height: auto;
     justify-content: center;
-    align-items: center;
+    justify-self: center;
     text-align: center;
-    height: 10vh; /* Ensure it takes the full height of the viewport */
-    width: 100%;
-    padding-left: 32vw;
-    gap: 3vw;
   }
 
-  button.gestiones{
-    margin-top: 0vh;
-    text-align: center;
-    min-width: 76%;
+  .apartado i {
+    font-size: 22px;
+    margin-top: 1vh;
   }
 
-  .opciones button{
-    width: 50vw;
-  }
-
-  hr{
-    min-width: 100%;
-    width: 527px;
-    background-color: black;
-    height: 1px;
+  .addPlan button{
+    width: 45%;
   }
 }
+
+@media (max-width: 320px) {
+  /* Ajustes para pantallas pequeñas */
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .pfp {
+    max-width: 20vw;
+    margin-left: 0;
+    margin-top: -5vh;
+  }
+
+  .datos {
+    margin-left: 0;
+    margin-top: -55px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .botones {
+    margin-left: -5px;
+    margin-top: 2vh;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  button {
+    width: auto;
+    min-width: 60%;
+    font-size: 14px;
+  }
+
+  .addPlan {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .plan {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1vh 0;
+  }
+
+  .titulo {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .userData{
+    display: grid;
+    gap: 0vh;
+    margin-top: 10px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-right: 0;
+    text-align: center;
+    margin-left: 20vw;
+    margin-top: 3%;
+  }
+
+  .name i{
+    font-size: 14px;
+    margin-top: 0vh;
+  }
+  
+  .name p {
+    font-size: 14px;
+    margin-top: 0vh;
+  }
+
+  .encabezado2 {
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5vh;
+  }
+
+  .linea {
+    height: 5px;
+    max-width: 80%;
+  }
+
+  .seccion {
+    font-size: 24px;
+  }
+
+  .apartado {
+    width: 95%;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .apartado i {
+    font-size: 22px;
+    margin-top: 1vh;
+  }
+
+  .addPlan button{
+    width: 45%;
+  }
+}
+
