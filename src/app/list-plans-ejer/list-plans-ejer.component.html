@@ -1,11 +1,13 @@
+<!-- Import de iconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 @if(selectedPlan) {
-
-  <div class="a">
-    <div class="linea"></div>
-      <span class="seccion">Plan de {{ selectedPlan.nombre }}</span>
-    <div class="linea"></div>
+  <div class="apartado">
+    <span class="seccion" aria-label="Mis planes"><strong>Plan de {{ selectedPlan.nombre }}</strong></span>
+    <i class="fa-solid fa-clipboard"></i>
+    <hr>
   </div>
-
+  <button routerLink="/listPlans"><i class="fa-solid fa-arrow-left"></i></button>
   <p class="level"><strong>NIVEL: </strong>{{ selectedNivel }}</p>
   @if(selectedEjercicios.length > 1) {
     @for (selectedEjercicio of selectedEjercicios; track $index) {
