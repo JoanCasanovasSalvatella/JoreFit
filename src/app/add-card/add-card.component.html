@@ -1,0 +1,31 @@
+<!-- Import de iconos de Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="todo">
+  <button routerLink="/profile/pago" class="atras"><i class="fa-solid fa-arrow-left"></i></button>
+  <div class="body">
+    <h2 class="title">Agregar una tarjeta</h2>
+    <form action="">
+      <div class="linea1">
+        <div class="item">
+          <label for="city" class="label">Numero de la tarjeta</label>
+          <input type="text"><br>
+        </div>
+        <div class="item">
+          <label for="street" class="label">CVV</label>
+          <input type="text"><br>
+        </div>
+      </div>
+      <div class="linea2">
+        <div class="item">
+          <label for="floor" class="label">Titular</label>
+          <input type="text"><br>
+        </div>
+      </div>
+    </form><br><br>
+
+    <div class="buttons">
+      <button class="cancel" routerLink="/profile/pago">Cancelar</button>
+      <button class="send" routerLink="/profile/pago">Guardar tarjeta</button><br><br>
+    </div>
+
+  </div>
